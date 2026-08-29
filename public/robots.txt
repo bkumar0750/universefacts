@@ -1,0 +1,22 @@
+# UNIVERSEFACT ROBOTS.TXT
+User-agent: *
+Allow: /
+Allow: /earth
+Allow: /solar-system
+Allow: /planets
+Allow: /moons
+Allow: /stars
+Allow: /galaxies
+Allow: /universe
+Allow: /missions
+Allow: /exoplanets
+Allow: /timeline
+Allow: /about
+Allow: /sources
+
+# Block private/internal API endpoints
+Disallow: /api/private/
+Disallow: /admin/
+Disallow: /*?*query=
+
+Sitemap: https://universefacts.org/sitemap.xml

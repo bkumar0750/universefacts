@@ -16,23 +16,23 @@ export const EarthMoonPhases: React.FC = () => {
   };
 
   return (
-    <div className="rounded-2xl glass-panel border border-white/10 p-6 space-y-6">
+    <div className="rounded-2xl glass-panel border border-slate-200 dark:border-white/10 p-6 space-y-6">
       
       <div>
-        <h3 className="text-lg font-display font-bold text-white flex items-center gap-2">
-          <MoonIcon className="w-5 h-5 text-cyan-400" />
+        <h3 className="text-lg font-display font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <MoonIcon className="w-5 h-5 text-cyan-600 dark:text-cyan-400" />
           <span>Interactive Earth–Moon Phase & Orbit Explorer</span>
         </h3>
-        <p className="text-xs text-slate-400 font-sans mt-0.5">
+        <p className="text-xs text-slate-600 dark:text-slate-300 font-sans mt-0.5">
           Drag the timeline slider to simulate the Moon’s 27.3-day synchronous orbit around Earth and observe changing lunar illumination.
         </p>
       </div>
 
       {/* Phase Slider Controls */}
-      <div className="space-y-3 bg-slate-900/60 p-4 rounded-xl border border-white/10">
-        <div className="flex items-center justify-between text-xs font-mono text-slate-300">
+      <div className="space-y-3 bg-slate-100 dark:bg-slate-900/60 p-4 rounded-xl border border-slate-200 dark:border-white/10">
+        <div className="flex items-center justify-between text-xs font-mono text-slate-700 dark:text-slate-300">
           <span>Orbital Progress (0% to 100%)</span>
-          <span className="text-cyan-400 font-bold">{getPhaseName(phaseValue)}</span>
+          <span className="text-cyan-600 dark:text-cyan-400 font-bold">{getPhaseName(phaseValue)}</span>
         </div>
         <input
           type="range"
@@ -40,9 +40,9 @@ export const EarthMoonPhases: React.FC = () => {
           max="100"
           value={phaseValue}
           onChange={(e) => setPhaseValue(Number(e.target.value))}
-          className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400"
+          className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-500"
         />
-        <div className="flex justify-between text-[10px] font-mono text-slate-500">
+        <div className="flex justify-between text-[10px] font-mono text-slate-600 dark:text-slate-400 font-semibold">
           <span>New Moon</span>
           <span>1st Quarter</span>
           <span>Full Moon</span>

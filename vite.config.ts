@@ -5,5 +5,23 @@ export default defineConfig({
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1200,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/three') || id.includes('@react-three')) {
+            return 'vendor-three';
+          }
+          if (id.includes('node_modules/framer-motion')) {
+            return 'vendor-framer';
+          }
+          if (id.includes('node_modules/lucide-react')) {
+            return 'vendor-lucide';
+          }
+          if (id.includes('node_modules/react-router-dom') || id.includes('node_modules/react-dom')) {
+            return 'vendor-react';
+          }
+        },
+      },
+    },
   },
 });

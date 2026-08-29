@@ -29,6 +29,9 @@ import { ComparePage } from './pages/ComparePage';
 import { AboutPage } from './pages/AboutPage';
 import { SourcesPage } from './pages/SourcesPage';
 
+import { ErrorBoundary } from './components/ErrorBoundary';
+import { NotFoundPage } from './pages/NotFoundPage';
+
 function AppShell() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isRandomFactOpen, setIsRandomFactOpen] = useState(false);
@@ -37,7 +40,7 @@ function AppShell() {
   const isHome = location.pathname === '/';
 
   return (
-    <div className="min-h-screen bg-[#020408] text-slate-200 relative overflow-x-hidden">
+    <div className="min-h-screen bg-slate-50 dark:bg-[#020408] text-slate-900 dark:text-slate-200 transition-colors duration-300 relative overflow-x-hidden">
       {/* Global star field */}
       <div className="stars-bg" />
 
@@ -47,28 +50,31 @@ function AppShell() {
       />
 
       <main className={`relative z-10 ${isHome ? '' : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10'}`}>
-        <Routes>
-          <Route path="/" element={<HomePage onOpenSearch={() => setIsSearchOpen(true)} onOpenRandomFact={() => setIsRandomFactOpen(true)} />} />
-          <Route path="/earth" element={<EarthPage />} />
-          <Route path="/solar-system" element={<SolarSystemPage />} />
-          <Route path="/planets" element={<PlanetsPage />} />
-          <Route path="/planets/:planetId" element={<PlanetDetailPage />} />
-          <Route path="/planet-compare" element={<ComparePage />} />
-          <Route path="/moons" element={<MoonsPage />} />
-          <Route path="/stars" element={<StarsPage />} />
-          <Route path="/galaxies" element={<GalaxiesPage />} />
-          <Route path="/galaxies/:galaxyId" element={<GalaxyDetailPage />} />
-          <Route path="/black-holes" element={<BlackHolesPage />} />
-          <Route path="/exoplanets" element={<ExoplanetsPage />} />
-          <Route path="/nebulae" element={<NebulaePage />} />
-          <Route path="/missions" element={<MissionsPage />} />
-          <Route path="/missions/:missionId" element={<MissionDetailPage />} />
-          <Route path="/universe" element={<UniversePage />} />
-          <Route path="/timeline" element={<TimelinePage />} />
-          <Route path="/multiverse" element={<MultiversePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/sources" element={<SourcesPage />} />
-        </Routes>
+        <ErrorBoundary>
+          <Routes>
+            <Route path="/" element={<HomePage onOpenSearch={() => setIsSearchOpen(true)} onOpenRandomFact={() => setIsRandomFactOpen(true)} />} />
+            <Route path="/earth" element={<EarthPage />} />
+            <Route path="/solar-system" element={<SolarSystemPage />} />
+            <Route path="/planets" element={<PlanetsPage />} />
+            <Route path="/planets/:planetId" element={<PlanetDetailPage />} />
+            <Route path="/planet-compare" element={<ComparePage />} />
+            <Route path="/moons" element={<MoonsPage />} />
+            <Route path="/stars" element={<StarsPage />} />
+            <Route path="/galaxies" element={<GalaxiesPage />} />
+            <Route path="/galaxies/:galaxyId" element={<GalaxyDetailPage />} />
+            <Route path="/black-holes" element={<BlackHolesPage />} />
+            <Route path="/exoplanets" element={<ExoplanetsPage />} />
+            <Route path="/nebulae" element={<NebulaePage />} />
+            <Route path="/missions" element={<MissionsPage />} />
+            <Route path="/missions/:missionId" element={<MissionDetailPage />} />
+            <Route path="/universe" element={<UniversePage />} />
+            <Route path="/timeline" element={<TimelinePage />} />
+            <Route path="/multiverse" element={<MultiversePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/sources" element={<SourcesPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </ErrorBoundary>
       </main>
 
       <Footer />

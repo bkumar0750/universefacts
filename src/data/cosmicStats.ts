@@ -105,5 +105,66 @@ export const cosmicStats: CosmicStat[] = [
       articleTitle: 'Gott et al. - A Map of the Universe'
     },
     description: 'Comoving spatial diameter calculated accounting for cosmic expansion since the Big Bang.'
+  },
+  {
+    id: 'milky-way-black-holes',
+    label: 'Stellar Black Holes in Milky Way',
+    value: '100',
+    numericTarget: 100,
+    unit: 'Million Black Holes',
+    isEstimate: true,
+    statusLabel: 'Estimated',
+    source: {
+      name: 'NASA',
+      url: 'https://science.nasa.gov/universe/black-holes/',
+      articleTitle: 'Stellar Mass Black Hole Population Models'
+    },
+    description: 'Astrophysical models predict approximately 100 million stellar-mass black holes scattered throughout our home galaxy.'
+  },
+  {
+    id: 'speed-of-light',
+    label: 'Speed of Light in Vacuum (c)',
+    value: '299,792.458',
+    numericTarget: 299792,
+    unit: 'km/s',
+    isEstimate: false,
+    statusLabel: 'Observed',
+    source: {
+      name: 'Peer-Reviewed Literature',
+      url: 'https://www.bipm.org/en/measurement-units/',
+      articleTitle: 'CODATA Recommended Values of Fundamental Physical Constants'
+    },
+    description: 'The fundamental cosmic speed limit at which all massless particles and gravitational waves travel in vacuum.'
+  },
+  {
+    id: 'cmb-temp',
+    label: 'Cosmic Radiation Background Temp',
+    value: '2.72548',
+    numericTarget: 2.7,
+    unit: 'Kelvin',
+    isEstimate: false,
+    statusLabel: 'Measured',
+    source: {
+      name: 'ESA',
+      url: 'https://www.esa.int/Planck',
+      articleTitle: 'ESA Planck CMB Thermal Spectrum Measurements'
+    },
+    description: 'The uniform thermal background radiation remnant left behind by recombination 380,000 years after the Big Bang.'
+  },
+  {
+    id: 'hubble-constant',
+    label: 'Hubble Expansion Constant (H0)',
+    value: '67.4',
+    numericTarget: 67.4,
+    unit: 'km/s / Mpc',
+    isEstimate: true,
+    statusLabel: 'Measured',
+    source: {
+      name: 'ESA',
+      url: 'https://www.esa.int/Planck',
+      articleTitle: 'Planck Cosmological Parameters 2018'
+    },
+    description: 'The rate of cosmic metric space expansion measured per megaparsec distance from Earth.'
   }
 ];
+

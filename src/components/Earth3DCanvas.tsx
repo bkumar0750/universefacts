@@ -542,7 +542,7 @@ export const Earth3DCanvas: React.FC<Earth3DCanvasProps> = ({
         {/* Title Badge */}
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
-          <span className="text-xs font-mono font-bold tracking-wider text-cyan-300 uppercase glass-panel px-3 py-1.5 rounded-full border border-cyan-500/30 bg-slate-950/80 backdrop-blur-md">
+          <span className="text-xs font-mono font-bold tracking-wider text-cyan-300 uppercase px-3.5 py-1.5 rounded-full border border-cyan-500/40 bg-slate-950/90 backdrop-blur-md shadow-lg">
             NASA Blue Marble 3D Globe & Earth Layers Cutaway
           </span>
         </div>
