@@ -37,7 +37,7 @@ const EXPLORE_ITEMS = [
     title: 'Exoplanets',
     sub: 'Worlds Beyond Our Sun',
     path: '/exoplanets',
-    img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1543722530-d2c3201371e7?q=80&w=600&auto=format&fit=crop',
     accent: 'rgba(16,185,129,0.5)',
   },
   {
@@ -58,14 +58,14 @@ const EXPLORE_ITEMS = [
     title: 'Space Missions',
     sub: "Humanity's Journey Beyond Earth",
     path: '/missions',
-    img: 'https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?q=80&w=600&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop',
     accent: 'rgba(59,130,246,0.5)',
   },
   {
     title: 'Multiverse',
     sub: 'Theories Beyond Our Universe',
     path: '/multiverse',
-    img: 'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=600&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1538370965046-79c0d6907d47?q=80&w=600&auto=format&fit=crop',
     accent: 'rgba(168,85,247,0.5)',
   },
 ];
@@ -223,7 +223,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
 
               {/* Earth Sphere Image */}
               <img
-                src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=900&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=600&auto=format&fit=crop"
                 alt="Earth Planet"
                 className="w-full h-full object-cover rounded-full shadow-[0_0_80px_rgba(56,189,248,0.25)] relative z-10 border-2 border-cyan-500/25 animate-float"
               />
@@ -239,7 +239,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
               >
                 <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full overflow-hidden shadow-xl border-2 border-white/25">
                   <img
-                    src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?q=80&w=200&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1532693322450-2cb5c511067d?q=80&w=200&auto=format&fit=crop"
                     alt="Moon"
                     className="w-full h-full object-cover"
                   />

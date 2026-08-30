@@ -20,7 +20,7 @@ const TIMELINE_STAGES: TimelineStage[] = [
     time: '4.54 BYA',
     title: 'Earth Formation & Giant Impact',
     badge: 'HADEAN EON',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1541845157-a6d2d100c931?auto=format&fit=crop&w=800&q=80',
     description: 'Accretion of dust and rocky planetesimals in the solar nebula. A Mars-sized body (Theia) collides with early Earth, launching debris that coalesces to form the Moon.',
     atmosphere: 'Methane, Carbon Dioxide, Water Vapor, Nitrogen (No Free Oxygen)',
     temperature: '>1,200°C (Molten Magma Surface)',

@@ -811,11 +811,44 @@ html.light ::-webkit-scrollbar-track { background: #f0f4f8; }
 html.light ::-webkit-scrollbar-thumb { background: #cbd5e1; }
 html.light ::-webkit-scrollbar-thumb:hover { background: #0891b2; }
 
-/* ─── PRODUCTION MOBILE TOUCH & RESPONSIVE HARDENING ──────────── */
+/* ─── PRODUCTION MOBILE TOUCH, TYPOGRAPHY & RESPONSIVE HARDENING ──────────── */
 @media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 7.5vw, 2.5rem);
+    line-height: 1.18;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 5.5vw, 1.85rem);
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: clamp(1.1rem, 4.5vw, 1.35rem);
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .glass-panel {
+    padding: 1rem;
+    border-radius: 1.25rem;
+  }
+
+  .glass-card {
+    padding: 0.875rem;
+    border-radius: 1rem;
+  }
+
   button, a, input, select {
     touch-action: manipulation;
-    min-height: 44px;
+    min-height: 40px;
   }
 
   .mobile-touch-scroll {
@@ -832,4 +865,5 @@ html.light ::-webkit-scrollbar-thumb:hover { background: #0891b2; }
 .pt-safe {
   padding-top: env(safe-area-inset-top, 16px);
 }
+
 

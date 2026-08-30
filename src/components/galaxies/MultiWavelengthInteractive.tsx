@@ -36,7 +36,7 @@ const WAVELENGTH_CONFIGS: WavelengthConfig[] = [
     color: 'text-amber-400',
     borderColor: 'border-amber-500/50',
     bgColor: 'bg-amber-500/20',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=1200&auto=format&fit=crop',
     reveals: 'Warm Cosmic Dust & Hidden Starbirth Nebulae',
     explanation: 'Infrared light penetrates dense cosmic dust clouds, uncovering embedded protostars and warm interstellar dust grains.',
     physicalProcess: 'Re-emission of heated dust grains and redshifted starlight',

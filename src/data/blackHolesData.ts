@@ -37,7 +37,7 @@ export const blackHolesData: BlackHole[] = [
     eventHorizonRadius: '60 km',
     description: 'The first generally accepted stellar-mass black hole confirmed in 1971. In a tight binary orbit with a blue supergiant star HDE 226868.',
     isObserved: true,
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1538370965046-79c0d6907d47?q=80&w=1200&auto=format&fit=crop',
     sources: [{ name: 'NASA', url: 'https://chandra.harvard.edu/' }]
   },
   {
@@ -63,7 +63,7 @@ export const blackHolesData: BlackHole[] = [
     eventHorizonRadius: '28 km',
     description: 'The closest known black hole to Earth, discovered by ESA’s Gaia astrometry satellite tracking the orbital motion of a Sun-like host star.',
     isObserved: true,
-    image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=1200&auto=format&fit=crop',
     sources: [{ name: 'ESA', url: 'https://www.esa.int/Gaia' }]
   }
 ];

@@ -19,7 +19,7 @@ const OCEAN_GALLERY_ITEMS: OceanGalleryItem[] = [
     title: 'Hydrothermal Black Smoker Vents',
     category: 'Hydrothermal Vents',
     depth: '2,500 - 3,800 meters',
-    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80',
     caption: 'Superheated mineral fluid erupting at 400°C into freezing ocean water',
     explanation: 'Hydrothermal vents spew mineral-rich fluids at temperatures exceeding 400°C without boiling due to 300 atmospheres of hydrostatic pressure. Chemoautotrophic bacteria turn hydrogen sulfide into biological energy, supporting entire deep-sea ecosystems in zero light.',
     source: 'NOAA Ocean Exploration',

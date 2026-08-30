@@ -44,7 +44,7 @@ const ZOOM_LEVELS: ZoomLevel[] = [
     title: '4. ACCRETION DISK & FRICTION',
     scale: '10 to 100 AU',
     massScale: 'Superheated Relativistic Plasma (Millions of K)',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1502134249126-9f3755a50d78?q=80&w=1200&auto=format&fit=crop',
     description: 'Interstellar gas spiraling inward experiences immense gravitational friction, glowing at millions of degrees in X-rays.',
     scientificFact: 'Accretion disks convert up to 40% of infalling mass into pure radiation energy (compared to 0.7% for nuclear fusion).'
   },

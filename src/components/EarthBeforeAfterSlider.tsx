@@ -21,7 +21,7 @@ const BEFORE_AFTER_ITEMS: BeforeAfterItem[] = [
     title: 'Muir Glacier Retreat in Alaska',
     location: 'Glacier Bay National Park, Alaska',
     timeframe: '1941 vs 2021 (80-Year Decline)',
-    beforeImg: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    beforeImg: 'https://images.unsplash.com/photo-1541845157-a6d2d100c931?auto=format&fit=crop&w=800&q=80',
     afterImg: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
     beforeLabel: 'August 1941 (Massive Ice Sheet)',
     afterLabel: 'August 2021 (7 km Retreat & Dense Forest Growth)',

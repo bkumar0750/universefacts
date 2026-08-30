@@ -23,7 +23,7 @@ const WAVELENGTH_BANDS: BandInfo[] = [
     id: 'infrared',
     name: 'INFRARED (μm - mm)',
     reveals: 'Warm cosmic dust, hidden starbirth nebulae, extreme high-redshift early galaxies.',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1502134249126-9f3755a50d78?q=80&w=1200&auto=format&fit=crop',
     explanation: 'Infrared light passes right through obscurant dust clouds, exposing young protostars and distant redshifted light.',
     telescopes: 'JWST, Spitzer, Herschel'
   },

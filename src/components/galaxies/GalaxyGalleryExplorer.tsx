@@ -12,7 +12,7 @@ export const GalaxyGalleryExplorer: React.FC = () => {
   // Interaction Atlas items
   const INTERACTION_ITEMS = [
     { name: 'Whirlpool Galaxy (M51)', detail: 'Grand design spiral interacting tidally with smaller companion NGC 5195.', image: 'https://images.unsplash.com/photo-1502134249126-9f3755a50d78?q=80&w=1200&auto=format&fit=crop' },
-    { name: 'Antennae Galaxies (NGC 4038/4039)', detail: 'Classic major collision launching long tidal tails of stars and dust.', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop' },
+    { name: 'Antennae Galaxies (NGC 4038/4039)', detail: 'Classic major collision launching long tidal tails of stars and dust.', image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop' },
     { name: 'Cartwheel Galaxy (ESO 350-40)', detail: 'Bullseye collision expanding ring of vigorous starburst nurseries.', image: 'https://images.unsplash.com/photo-1538370965046-79c0d6907d47?q=80&w=1200&auto=format&fit=crop' },
     { name: 'Mice Galaxies (NGC 4676)', detail: 'Pair of passing spirals displaying long tidal tails resembles mice tails.', image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop' }
   ];

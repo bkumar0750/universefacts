@@ -12,7 +12,7 @@ export const starsData: Star[] = [
     temperature: '5,500°C (Surface) / 15 million°C (Core)',
     luminosity: '1 L☉ (3.828 × 10²6 Watts)',
     description: 'G-type main-sequence star powering Earth’s climate, weather, ocean currents, and photosynthesis through hydrogen nuclear fusion.',
-    evolutionStage: 'Main Sequence (Currently ~4.6 billion years old; roughly halfway through its 10-billion-year main sequence life).',
+    evolutionStage: 'Main Sequence (Currently ~4.6 billion years old).',
     image: 'https://images.unsplash.com/photo-1532635241-17e820acc59f?q=80&w=1000&auto=format&fit=crop',
     sources: [{ name: 'NASA', url: 'https://science.nasa.gov/sun/' }, { name: 'ISRO', url: 'https://www.isro.gov.in/Aditya_L1.html' }]
   },
@@ -43,7 +43,7 @@ export const starsData: Star[] = [
     luminosity: '126,000 L☉',
     description: 'A massive red supergiant in Orion’s shoulder nearing the end of its life, expected to explode as a dramatic supernova within 100,000 years.',
     evolutionStage: 'Post-Main Sequence Red Supergiant (Carbon/Oxygen core fusion phase).',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1538370965046-79c0d6907d47?q=80&w=1000&auto=format&fit=crop',
     sources: [{ name: 'NASA', url: 'https://www.nasa.gov/' }]
   },
   {
@@ -73,7 +73,7 @@ export const starsData: Star[] = [
     luminosity: '270,000 L☉',
     description: 'One of the largest known stars in the universe. If placed at the center of our solar system, its surface would extend beyond Jupiter’s orbit.',
     evolutionStage: 'Red Hypergiant nearing core collapse.',
-    image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1000&auto=format&fit=crop',
     sources: [{ name: 'Peer-Reviewed Literature', url: 'https://arxiv.org/' }]
   }
 ];

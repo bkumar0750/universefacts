@@ -167,7 +167,7 @@ export const EARTH_51_FACTS: EarthFact[] = [
     sourceUrl: 'https://science.nasa.gov/earth/facts/',
     scientificStatus: 'Observed',
     lastVerified: '29 Aug 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1541845157-a6d2d100c931?auto=format&fit=crop&w=800&q=80',
     imageCaption: 'Hydrothermal submarine volcanic vent',
     isFeaturedWow: true
   },
@@ -182,7 +182,7 @@ export const EARTH_51_FACTS: EarthFact[] = [
     sourceUrl: 'https://science.nasa.gov/earth/facts/',
     scientificStatus: 'Measured',
     lastVerified: '29 Aug 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1541845157-a6d2d100c931?auto=format&fit=crop&w=800&q=80',
     imageCaption: 'Bathymetric map of global Mid-Ocean Ridge system',
     isFeaturedWow: true
   },
@@ -212,7 +212,7 @@ export const EARTH_51_FACTS: EarthFact[] = [
     sourceUrl: 'https://science.nasa.gov/earth/facts/',
     scientificStatus: 'Estimated',
     lastVerified: '29 Aug 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1541845157-a6d2d100c931?auto=format&fit=crop&w=800&q=80',
     imageCaption: 'Mauna Loa shield volcano structure',
     isFeaturedWow: false
   },
@@ -392,7 +392,7 @@ export const EARTH_51_FACTS: EarthFact[] = [
     sourceUrl: 'https://science.nasa.gov/science-research/earth-science/earths-magnetosphere-protecting-our-planet-from-harmful-space-energy/',
     scientificStatus: 'Measured',
     lastVerified: '29 Aug 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=80',
     imageCaption: 'Paleomagnetic basalt striping on ocean floor',
     isFeaturedWow: true
   },
@@ -497,7 +497,7 @@ export const EARTH_51_FACTS: EarthFact[] = [
     sourceUrl: 'https://pubs.usgs.gov/gip/geotime/age.html',
     scientificStatus: 'Estimated',
     lastVerified: '29 Aug 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80',
     imageCaption: 'Seismic wave tomography model of Earth core',
     isFeaturedWow: false
   },
@@ -512,7 +512,7 @@ export const EARTH_51_FACTS: EarthFact[] = [
     sourceUrl: 'https://science.nasa.gov/earth/facts/',
     scientificStatus: 'Estimated',
     lastVerified: '29 Aug 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1532635241-17e820acc59f?auto=format&fit=crop&w=800&q=80',
     imageCaption: 'Incandescent iron core thermal simulation',
     isFeaturedWow: true
   },
@@ -527,7 +527,7 @@ export const EARTH_51_FACTS: EarthFact[] = [
     sourceUrl: 'https://science.nasa.gov/earth/facts/',
     scientificStatus: 'Measured',
     lastVerified: '29 Aug 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80',
     imageCaption: 'Geodynamo liquid outer core convection',
     isFeaturedWow: false
   },
@@ -602,7 +602,7 @@ export const EARTH_51_FACTS: EarthFact[] = [
     sourceUrl: 'https://pubs.usgs.gov/gip/geotime/age.html',
     scientificStatus: 'Observed',
     lastVerified: '29 Aug 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1541845157-a6d2d100c931?auto=format&fit=crop&w=800&q=80',
     imageCaption: 'Subduction zone volcanic trench cross-section',
     isFeaturedWow: false
   },
@@ -797,7 +797,7 @@ export const EARTH_51_FACTS: EarthFact[] = [
     sourceUrl: 'https://science.nasa.gov/earth/facts/',
     scientificStatus: 'Modelled',
     lastVerified: '29 Aug 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1541845157-a6d2d100c931?auto=format&fit=crop&w=800&q=80',
     imageCaption: 'Artist depiction of early molten Earth during bombardment',
     isFeaturedWow: false
   },

@@ -51,28 +51,40 @@ export const NebulaePage: React.FC = () => {
         {filteredNebulae.map((nebula) => (
           <div
             key={nebula.id}
-            className="glass-panel group rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden flex flex-col justify-between p-6 space-y-4 bg-white/80 dark:bg-slate-900/60"
+            className="glass-panel group rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden flex flex-col justify-between bg-white/80 dark:bg-slate-900/60"
           >
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-mono font-bold text-indigo-700 dark:text-indigo-300 bg-indigo-500/10 px-2.5 py-1 rounded-full border border-indigo-500/30">
-                {nebula.type}
-              </span>
-              <span className="text-xs font-mono text-slate-500 dark:text-slate-400">{nebula.distance}</span>
-            </div>
+            {nebula.image && (
+              <div className="h-44 w-full relative overflow-hidden">
+                <img
+                  src={nebula.image}
+                  alt={nebula.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-10">
+                  <span className="text-xs font-mono font-bold text-indigo-300 bg-slate-950/80 px-2.5 py-1 rounded-full border border-indigo-500/40 backdrop-blur-md">
+                    {nebula.type}
+                  </span>
+                  <span className="text-xs font-mono text-white/90 bg-slate-950/80 px-2.5 py-1 rounded-full border border-white/20 backdrop-blur-md">{nebula.distance}</span>
+                </div>
+              </div>
+            )}
 
-            <div>
-              <h3 className="text-2xl font-display font-bold text-slate-900 dark:text-white">{nebula.name}</h3>
-              <span className="text-xs font-mono text-cyan-600 dark:text-cyan-400">Constellation: {nebula.constellation}</span>
-              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-sans mt-2 leading-relaxed">
-                {nebula.description}
-              </p>
-            </div>
+            <div className="p-6 space-y-4 flex flex-col justify-between flex-1">
+              <div>
+                <h3 className="text-2xl font-display font-bold text-slate-900 dark:text-white">{nebula.name}</h3>
+                <span className="text-xs font-mono text-cyan-600 dark:text-cyan-400 font-semibold">Constellation: {nebula.constellation}</span>
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-sans mt-2 leading-relaxed">
+                  {nebula.description}
+                </p>
+              </div>
 
-            <div className="grid grid-cols-2 gap-2 text-xs font-mono pt-3 border-t border-slate-200 dark:border-white/10 text-slate-500 dark:text-slate-400">
-              <div>Size: <strong className="text-slate-900 dark:text-white">{nebula.size}</strong></div>
-            </div>
+              <div className="grid grid-cols-2 gap-2 text-xs font-mono pt-3 border-t border-slate-200 dark:border-white/10 text-slate-500 dark:text-slate-400">
+                <div>Size: <strong className="text-slate-900 dark:text-white">{nebula.size}</strong></div>
+              </div>
 
-            <SourceBadge sources={nebula.sources} />
+              <SourceBadge sources={nebula.sources} />
+            </div>
           </div>
         ))}
       </div>

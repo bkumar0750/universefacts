@@ -101,7 +101,7 @@ export const EarthSatelliteControlRoom: React.FC = () => {
       id: 'night',
       label: 'Night Lights',
       icon: <Moon className="w-3.5 h-3.5" />,
-      image: 'https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?auto=format&fit=crop&w=1200&q=80',
       caption: 'NOAA/NASA Suomi NPP Black Marble showing artificial city light illumination at night',
       statusBadge: 'REAL OBSERVATION • NASA BLACK MARBLE'
     },
@@ -141,7 +141,7 @@ export const EarthSatelliteControlRoom: React.FC = () => {
       id: 'ice',
       label: 'Polar Ice & Glaciers',
       icon: <Snowflake className="w-3.5 h-3.5" />,
-      image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://images.unsplash.com/photo-1541845157-a6d2d100c931?auto=format&fit=crop&w=1200&q=80',
       caption: 'ICESat-2 laser altimetry tracking sea ice thickness and glacial mass balance',
       statusBadge: 'REAL OBSERVATION • NASA ICESat-2'
     }
