@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Orbit, ExternalLink, ArrowUp, Sparkles, ShieldCheck, Heart } from 'lucide-react';
+import { Orbit, ExternalLink, ArrowUp, Sparkles, ShieldCheck, Heart, Mail } from 'lucide-react';
 
 const FOOTER_NAV = [
   {
@@ -32,6 +32,7 @@ const FOOTER_NAV = [
       { name: 'Compare Planetary Worlds', path: '/planet-compare' },
       { name: 'Verified Data Sources', path: '/sources' },
       { name: 'About Atlas Project', path: '/about' },
+      { name: 'Contact Us (Queries)', path: '/contact' },
     ],
   },
 ];
@@ -139,10 +140,20 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* Live Operational Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-semibold">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-              <span>System Status: NASA & ISRO Feeds Operational</span>
+            {/* Live Operational & Contact Badges */}
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-semibold">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
+                <span>System Status: NASA & ISRO Feeds Operational</span>
+              </div>
+
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-600 dark:text-cyan-300 font-semibold transition-all"
+              >
+                <Mail className="w-3.5 h-3.5" />
+                <span>Contact & Queries: imbhuvi91@gmail.com</span>
+              </Link>
             </div>
           </div>
 

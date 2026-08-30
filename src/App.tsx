@@ -28,6 +28,7 @@ import { MultiversePage } from './pages/MultiversePage';
 import { ComparePage } from './pages/ComparePage';
 import { AboutPage } from './pages/AboutPage';
 import { SourcesPage } from './pages/SourcesPage';
+import { ContactPage } from './pages/ContactPage';
 
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -72,6 +73,7 @@ function AppShell() {
             <Route path="/multiverse" element={<MultiversePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/sources" element={<SourcesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </ErrorBoundary>

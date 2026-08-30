@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Search, Sparkles, Menu, X, Orbit, Sun, Moon, Globe, Compass, Rocket, Clock, Info, Stars, Layers } from 'lucide-react';
+import { Search, Sparkles, Menu, X, Orbit, Sun, Moon, Globe, Compass, Rocket, Clock, Info, Stars, Layers, Mail } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 interface HeaderProps {
@@ -18,12 +18,13 @@ const PRIMARY_NAV_ITEMS = [
   { name: 'Missions',     path: '/missions',     icon: Rocket },
 ];
 
-// 📱 All 9 Navigation Links for Mobile Drawer & Full Menu
+// 📱 Navigation Links for Mobile Drawer & Full Menu
 const ALL_NAV_ITEMS = [
   ...PRIMARY_NAV_ITEMS,
   { name: 'Timeline',     path: '/timeline',     icon: Clock },
   { name: 'Compare',      path: '/planet-compare', icon: Layers },
   { name: 'About',        path: '/about',        icon: Info },
+  { name: 'Contact',      path: '/contact',      icon: Mail },
 ];
 
 export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenRandomFact }) => {

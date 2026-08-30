@@ -1,5 +1,5 @@
-import React from 'react';
-import { ShieldCheck, HelpCircle, BookOpen, Globe, Rocket } from 'lucide-react';
+import { ShieldCheck, HelpCircle, BookOpen, Globe, Rocket, Mail, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const AboutPage: React.FC = () => {
   const sourceHierarchy = [
@@ -100,6 +100,32 @@ export const AboutPage: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* CONTACT & QUERIES BOX */}
+      <section className="glass-panel p-6 sm:p-8 rounded-3xl border border-slate-200 dark:border-cyan-500/30 bg-gradient-to-r from-cyan-500/5 via-indigo-500/5 to-purple-500/5 space-y-4 animate-fade-in-up">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="inline-flex items-center gap-2 text-xs font-mono font-bold text-cyan-600 dark:text-cyan-300">
+              <Mail className="w-4 h-4 text-cyan-500" />
+              <span>SEND ANY QUERY</span>
+            </div>
+            <h3 className="text-2xl font-display font-extrabold text-slate-900 dark:text-white">
+              Questions or Data Corrections?
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-sans max-w-xl">
+              We welcome all scientific inquiries, feedback, and educational collaboration requests. Contact us directly at <strong className="font-mono text-cyan-600 dark:text-cyan-300">imbhuvi91@gmail.com</strong> or visit our Contact Us page.
+            </p>
+          </div>
+
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-xs font-mono font-bold text-white bg-cyan-600 hover:bg-cyan-500 transition-all shadow-md self-start sm:self-auto shrink-0"
+          >
+            <span>Go to Contact Page</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
 
