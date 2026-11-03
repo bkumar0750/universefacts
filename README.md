@@ -31,6 +31,13 @@ If you are developing a production application, we recommend enabling type-aware
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
 
+## Vercel Web Analytics
+
+The app uses `@vercel/analytics` with React Router route tracking. After deploying to Vercel, open the UniverseFacts project, select **Analytics**, and choose **Enable** for the **Production** environment. Deploy again if prompted. The dashboard provides visitors, page views, top pages and referrers, and visitor breakdowns; use its date-range selector to compare periods.
+
+Custom events record search submissions without query text, search result categories, navigation categories, contact form submission, space-content interactions, and external or social-link hostnames. No email addresses, names, message contents, or full external URLs are sent. The current site has no newsletter, bookmarks/favorites, share buttons, or download flow to track.
+
+See the [Vercel Web Analytics documentation](https://vercel.com/docs/analytics) for dashboard and data-export details.
 
 
 

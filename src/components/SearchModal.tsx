@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { track } from '@vercel/analytics/react';
 import { X, Search, ArrowRight } from 'lucide-react';
 
 interface SearchModalProps {
@@ -71,6 +72,15 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             ref={inputRef}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(event) => {
+              const normalizedQuery = query.trim();
+              if (event.key === 'Enter' && normalizedQuery) {
+                track('Search', {
+                  queryLength: normalizedQuery.length,
+                  resultCount: filtered.reduce((count, group) => count + group.items.length, 0),
+                });
+              }
+            }}
             placeholder="Search planets, galaxies, missions, concepts…"
             className="flex-1 bg-transparent text-sm text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-slate-400 outline-none font-sans"
           />
@@ -91,6 +101,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                 <Link
                   key={item.name}
                   to={item.path}
+                  onClick={() => track('Search Result Click', { category: group.group })}
                   className="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-white/10 group transition-all"
                 >
                   <div>

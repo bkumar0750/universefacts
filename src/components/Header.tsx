@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { track } from '@vercel/analytics/react';
 import { Search, Sparkles, Menu, X, Orbit, Sun, Moon, Globe, Compass, Rocket, Clock, Info, Stars, Layers, Mail } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -107,6 +108,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenRandomFact }
                   <Link
                     key={item.path}
                     to={item.path}
+                    onClick={() => track('Category Navigation', { category: item.name })}
                     className={`flex items-center gap-1.5 px-2.5 xl:px-3 py-1.5 rounded-lg text-xs font-mono font-semibold transition-all relative ${
                       active
                         ? 'text-cyan-700 dark:text-cyan-300 bg-white dark:bg-cyan-500/20 border border-slate-200 dark:border-cyan-500/40 shadow-sm font-bold'
@@ -162,7 +164,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenRandomFact }
 
               {/* Random Fact Drawer Button (sm: 640px+) */}
               <button
-                onClick={onOpenRandomFact}
+                onClick={() => {
+                  track('Space Content Interaction', { interaction: 'random_fact_open' });
+                  onOpenRandomFact();
+                }}
                 className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono font-bold text-amber-800 dark:text-amber-300 border border-amber-500/30 bg-amber-500/10 hover:bg-amber-500/20 transition-all shadow-sm active:scale-95"
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-pulse" />
@@ -194,6 +199,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenRandomFact }
                     <Link
                       key={item.path}
                       to={item.path}
+                      onClick={() => track('Category Navigation', { category: item.name })}
                       className={`flex items-center gap-2 px-3 py-2.5 rounded-xl text-xs font-mono font-bold transition-all ${
                         active
                           ? 'text-cyan-800 dark:text-cyan-300 bg-cyan-500/20 border border-cyan-500/40 shadow-sm'
@@ -211,6 +217,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenRandomFact }
                 <button
                   onClick={() => {
                     setMenuOpen(false);
+                    track('Space Content Interaction', { interaction: 'random_fact_open' });
                     onOpenRandomFact();
                   }}
                   className="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-mono font-bold text-amber-800 dark:text-amber-300 border border-amber-500/30 bg-amber-500/10"
@@ -240,6 +247,4 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenRandomFact }
     </>
   );
 };
-
-
 

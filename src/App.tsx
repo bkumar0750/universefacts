@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, type MouseEvent } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Analytics, track } from '@vercel/analytics/react';
 import { ThemeProvider } from './context/ThemeContext';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -40,8 +41,31 @@ function AppShell() {
 
   const isHome = location.pathname === '/';
 
+  const handleExternalLinkClick = (event: MouseEvent<HTMLDivElement>) => {
+    if (!(event.target instanceof Element)) return;
+
+    const link = event.target.closest('a[href]');
+    if (!(link instanceof HTMLAnchorElement)) return;
+
+    const url = new URL(link.href);
+    if ((url.protocol !== 'http:' && url.protocol !== 'https:') || url.origin === window.location.origin) return;
+
+    const socialDomains = ['facebook.com', 'instagram.com', 'linkedin.com', 'tiktok.com', 'twitter.com', 'x.com', 'youtube.com'];
+    const socialDomain = socialDomains.find((domain) => url.hostname === domain || url.hostname.endsWith(`.${domain}`));
+
+    track(socialDomain ? 'Social Link Click' : 'External Link Click', {
+      domain: socialDomain ?? url.hostname,
+      page: location.pathname,
+    });
+  };
+
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#020408] text-slate-900 dark:text-slate-200 transition-colors duration-300 relative overflow-x-hidden">
+    <div
+      className="min-h-screen bg-slate-50 dark:bg-[#020408] text-slate-900 dark:text-slate-200 transition-colors duration-300 relative overflow-x-hidden"
+      onClickCapture={handleExternalLinkClick}
+    >
+      <Analytics route={location.pathname} path={location.pathname} />
+
       {/* Global star field */}
       <div className="stars-bg" />
 

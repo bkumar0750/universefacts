@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { track } from '@vercel/analytics/react';
 import { Mail, Send, CheckCircle2, Copy, MessageSquare, Sparkles, HelpCircle, Globe, ShieldCheck, Clock } from 'lucide-react';
 
 export const ContactPage: React.FC = () => {
@@ -23,6 +24,7 @@ export const ContactPage: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
+    track('Contact Form Submission');
     setSubmitted(true);
   };
 
